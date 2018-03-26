@@ -9,3 +9,16 @@ h1 {
   font-weight: bold;
   color: #7529f5;
 }
+
+.card-title {
+  color: #7529f5;
+  font-weight: bold;
+}
+
+.list-group-item {
+  font-weight: bold;
+}
+
+.badge-dark {
+  background-color: #7529f5;
+}
