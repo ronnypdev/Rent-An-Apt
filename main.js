@@ -9,7 +9,7 @@ $(document).ready(function() {
       aptList += '<div class="col-md-4 col-xs-12 my-2">';
       aptList += '<div class="card">';
       aptList +=
-        '<img class="card-img-top" src="http://lorempixel.com/235/200/city/">';
+        '<img class="card-img-top" src="https://cdngeneral.rentcafe.com/dmslivecafe/3/422070/NJ_FortLee_Twenty50byWindsor_p0429429_1_01_1_PhotoGallery.jpg?crop=(0,0,300,225)&cropxunits=300&cropyunits=225&width=350">';
 
       aptList += '<div class="card-body">';
       aptList += '<h5 class="card-title">' + apartments.ApartmentName + '</h5>';
