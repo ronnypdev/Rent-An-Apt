@@ -4,8 +4,9 @@ $(document).ready(function() {
 
   // Call back function in order to process the JSON data
   function findApt(data) {
-    var aptList = '<div class="col-md-4 col-xs-12 my-2">';
+    var aptList = '<div class="row">';
     $.each(data, function(i, apartments) {
+      aptList += '<div class="col-md-4 col-xs-12 my-2">';
       aptList += '<div class="card">';
       aptList +=
         '<img class="card-img-top" src="http://lorempixel.com/235/200/city/">';
@@ -61,13 +62,15 @@ $(document).ready(function() {
       aptList +=
         '<div class="card-footer">' +
         '<small class="text-muted">' +
-        'Last updated 3 mins ago' +
+        'Last updated 10 mins ago' +
         '</small></div>';
 
+      aptList += '</div>';
       aptList += '</div>'; // end card
     }); // end loop
 
-    aptList += '</div>'; // end column
+    aptList += '</div>'; // end row
+    $('#results').html(aptList);
   }
 
   $.getJSON(url, findApt);
