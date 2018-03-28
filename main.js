@@ -49,7 +49,7 @@ $(document).ready(function() {
         ' - ' +
         '$' +
         apartments.MaximumRent +
-        '</span></li></ul>';
+        '</span></li></ul>'; // end list group
 
       aptList +=
         '<div class="card-body">' +
@@ -57,21 +57,22 @@ $(document).ready(function() {
         apartments.ApplyOnlineURL +
         '" class="card-link">' +
         'Apply Online' +
-        '</a></div>';
+        '</a></div>'; // end card body
 
       aptList +=
         '<div class="card-footer">' +
         '<small class="text-muted">' +
         'Last updated 10 mins ago' +
-        '</small></div>';
+        '</small></div>'; // end card footer
 
-      aptList += '</div>';
       aptList += '</div>'; // end card
+      aptList += '</div>'; // end column
     }); // end loop
 
     aptList += '</div>'; // end row
     $('#results').html(aptList);
   }
 
+  // Get JSON method
   $.getJSON(url, findApt);
 });
